@@ -78,7 +78,7 @@ h1 {
     display: block;
     width: 100px;
     height: 80px;
-    background-color: #F4E3B2;
+    background-color: #FF6700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,12 @@ h1 {
     font-size: 0.7em;
     letter-spacing: 0.2em;
     box-shadow: none;
-    background: #FF6700;
+    background: #F4E3B2;
     text-transform: uppercase;
     z-index: 9;
+}
+
+.mudaCor {
+    color: rgb(26, 188, 156);
+    font-weight: bolder;
 }
