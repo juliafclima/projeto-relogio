@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>Relógio</h1>
+
+        <section>
+            <div class="container">
+                <img src="imagens/clock.svg" class="relogio">
+                <img src="imagens/hour.svg" class="horas">
+                <img src="imagens/minute.svg" class="minutos">
+        </section>
+
+        <section>
+            <div id="clock">
+                <h2>Que horas são?</h2>
+                <div id="time">
+                    <div><span id="hour">00</span><span>Horas</span></div>
+                    <div><span id="minute">00</span><span>Minutos</span></div>
+                    <div><span id="second">00</span><span>Segundos</span></div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const horas = document.getElementById('hour');
+        const minutos = document.getElementById('minute');
+        const segundos = document.getElementById('second');
+
+        const relogio = setInterval(function time() {
+            let dateToday = new Date();
+            let hr = dateToday.getHours();
+            let min = dateToday.getMinutes();
+            let s = dateToday.getSeconds();
+
+        if (hr < 10) hr = '0' + hr;
+
+        if (min < 10) min = '0' + min;
+
+        if (s < 10) s = '0' + s;
+
+        horas.textContent = hr;
+        minutos.textContent = min;
+        segundos.textContent = s;
+
+})
+    </script>
+</body>
+</html>
