@@ -12,23 +12,34 @@
 </head>
 <body>
     <main>
-        <h1>Relógio</h1>
+        <h1>RELÓGIO</h1>
 
-        <section>
+        <section> <!--RELÓGIO ANALÓGICO-->
             <div class="container">
                 <img src="imagens/clock.svg" class="relogio">
                 <img src="imagens/hour.svg" class="horas">
                 <img src="imagens/minute.svg" class="minutos">
         </section>
 
-        <section>
+        <section> <!--RELÓGIO DIGITAL-->
             <div id="clock">
                 <h2>Que horas são?</h2>
                 <div id="time">
-                    <div><span id="hour">00</span><span class="mudaCor">Horas</span></div>
-                    <div><span id="minute">00</span><span class="mudaCor">Minutos</span></div>
-                    <div><span id="second">00</span><span class="mudaCor">Segundos</span></div>
-                </div>
+                    <div>
+                        <span id="hour">00</span>
+                        <span class="corFont">Horas</span>
+                    </div>
+
+                    <div>
+                        <span id="minute">00</span>
+                        <span class="corFont">Minutos</span>
+                    </div>
+
+                    <div>
+                        <span id="second">00</span>
+                        <span class="corFont">Segundos</span>
+                    </div>
+                 </div>
             </div>
         </section>
     </main>
@@ -53,8 +64,12 @@
         horas.textContent = hr;
         minutos.textContent = min;
         segundos.textContent = s;
-
 })
     </script>
 </body>
+
+<footer id="fixarRodape">
+    <p>Site desenvolvido por <a href="https://github.com/juliafclima" target="_blank" id="gitHub" class="animationFadeIn">Julia Lima</a></p>
+</footer>
+
 </html>
